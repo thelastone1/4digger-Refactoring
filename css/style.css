@@ -446,15 +446,90 @@ template {
   display: none;
 }
 
-body{
+/*=============================================================================*/
+/*My Custom Part*/
+
+body {
   background-color: #333;
 }
 
+/*Header 시작*/
 header{
-  border:1px solid #fff;
+  background-color: #666;
+  padding:8px 10px 5px;
+  overflow: hidden
 }
 
-#logoimg{
-  max-width: 5rem;
-  margin:1rem 1.5rem;
+header>*{
+  display:inline-block;
+}
+
+header img{
+  width:70px;
+  margin:0.5rem 2rem 0 3rem;
+}
+
+header form{
+  width:65%;
+  position:relative;
+  top:-20px;
+  margin-left: 15px;
+}
+
+.search{
+  width:100%;
+  height:30px;
+  padding-left:10px;
+  padding-bottom:3px;
+}
+
+.menu{
+  position:relative;
+  margin-top:8px;
+  margin-left:30px;
+  padding-left:0;
+  width:410px;
+}
+
+header li{
+  float:left;
+  list-style-type: none;
+  margin:0 15px;
+}
+
+header a {
+  color:#FFF;
+  text-decoration: none;
+}
+
+/*Header 끝*/
+
+.columns-wrap{
+  background-color: #333;
+}
+
+#columns{
+  /*column-count:3;*/
+  column-width : 350px;
+  /*border : 5px solid green;*/
+  column-gap:10px;
+  margin:0.5rem 2rem;
+}
+#columns figure{
+  display:inline-block;
+  border : 1px solid rgba(0,0,0,0.2);
+  margin:0 auto;
+  margin-bottom:10px;
+  padding:10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  background-color: #999;
+}
+#columns figure img{
+  width:100%;
+}
+#columns figure figcaption{
+  border-top:1px solid rgba(0,0,0,0.2);
+  padding:10px;
+  margin-top:10px;
+  text-align: center;
 }
